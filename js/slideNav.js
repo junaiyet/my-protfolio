@@ -44,7 +44,7 @@ var SlideNav = function () {
 	}, {
 		key: 'getElements',
 		value: function getElements() {
-			this.toggleButton = document.querySelector(this.toggleButtonSelector);
+			this.toggleButton = document.getElementById(this.toggleButtonSelector);
 			if (this.toggleButton) {
 				this.opened = false;
 			}
@@ -208,7 +208,7 @@ var SlideNav = function () {
 		value: function getSection(linkHash) {
 			if (linkHash) {
 				var id = "#" + linkHash;
-				return document.querySelector(id);
+				return document.getElementById(id);
 			}
 			return false;
 		}
