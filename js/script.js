@@ -1,24 +1,41 @@
-eval(mod_pagespeed_Nha5IVlKj4);
-
-
-eval(mod_pagespeed_UCryxWCxTA);
-
-
-eval(mod_pagespeed_RLO0sVcgQg);
-
-// eval(mod_pagespeed_Ypfcmt9TGz);
-
-eval(mod_pagespeed_g9FXYGgy1g);
-
-window.dataLayer = window.dataLayer || [];
-
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-
-gtag('config', 'UA-23581568-13');
-
-
-document.write(new Date().getFullYear());
-
+$('.testimony-slider').slick({
+    dots: false,
+    infinite: true,
+    arrows:true,
+    prevArrow:' <div class="prevarrow"></div>',
+    nextArrow:'<div class="nextarrow"></div>',
+    // nextArrow:' i class="fas fa-minus nextvarrow"></i>',
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '0',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });

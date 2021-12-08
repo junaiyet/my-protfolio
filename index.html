@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <!-- <link rel="stylesheet" href="css/ionicons.min.css"> -->
+   <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top ftco-navbar-light" id="navbar">
+  <nav class="navbar navbar-expand-lg fixed-top ftco-navbar-light" id="navbar">
         <div class="container">
             <a class="navbar-brand align-items-center" href="index.html">
                 JunaiYet
@@ -39,18 +41,14 @@
             </div>
         </div>
     </nav>
-    <section class="hero-wrap" id="home" style="background-image:url(images/xbg_1.jpg.pagespeed.ic.LOd_TK0d0a.webp)">
-        <div class="overlay"></div>
+    <section class="hero-wrap" id="home">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center">
                 <div class="col-lg-7">
-                    <div class="text mt-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="text mt-5" >
                         <span class="subheading">Hi There!</span>
                         <h1 class="mb-4">I am Junaiyet <br>
-                            <span class="typewrite" data-period="2000"
-                                data-type='[ "A Web Designer", "A Developer", "I Love Design.", "I Love to Develop." ]'>
-                                <span class="wrap"></span>
-                            </span>
+                          front-end devevloper
                         </h1>
                         <div class="w-md-75 w-100">
                             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
@@ -65,19 +63,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <img  src="images/Junaiye-bg.png" alt="images">
+                </div>
             </div>
         </div>
     </section>
     <section class="ftco-section" id="about">
         <div class="container-xl">
             <div class="row g-xl-5">
-                <div class="col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="1000">
+                <div class="col-md-6 d-flex align-items-center">
                     <div class="img img-about"
-                        style="background-image:url(images/xabout.jpg.pagespeed.ic.ROjPXqaKV7.webp)">
+                                       style="background-image:url(images/about-img.png)">
                     </div>
                 </div>
-                <div class="col-md-6 heading-section" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="col-md-6 heading-section">
                     <div class="my-5">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -202,7 +202,7 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section" id="services">
+    <section class="ftco-section services" id="services">
         <div class="container-xl">
             <div class="row justify-content-center">
                 <div class="col-md-7 heading-section text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
@@ -211,8 +211,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="1000">
+                <div class="col-md-4 align-items-stretch">
                     <div class="services-2">
                         <div class="icon"><span class="flaticon-code"></span></div>
                         <div class="text">
@@ -223,8 +222,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="1000">
+                <div class="col-md-4 align-items-stretch">
                     <div class="services-2">
                         <div class="icon"><span class="flaticon-web-programming"></span></div>
                         <div class="text">
@@ -235,8 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="1000">
+                <div class="col-md-4  align-items-stretch">
                     <div class="services-2">
                         <div class="icon"><span class="flaticon-vector"></span></div>
                         <div class="text">
@@ -369,7 +366,7 @@
                 </div>
             </div>
     </section>
-    <section class="ftco-section testimony-section bg-light">
+    <section class="ftco-section testimony-section">
         <div class="container-xl">
             <div class="row justify-content-center pb-4">
                 <div class="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000">
@@ -379,13 +376,33 @@
             </div>
             <div class="row">
                 <div class="col-md-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="carousel-testimony">
+                    <div class="testimony-slider">
+                        <div class="item">
+                            <div class="testimony-wrap">
+                                <div class="text">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="user-img" style="background-image: url(./images/team1.jpg);">
+                                            <!-- <img src="images/team1.jpg" alt=""> -->
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left">
+                                                </div>
+                                        </div> 
+                                        <div class="ps-3 tx">
+                                            <p class="name">Roger Scott</p>
+                                            <span class="position">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="item">
                             <div class="testimony-wrap">
                                 <div class="text">
                                     <div class="d-flex align-items-center mb-4">
                                         <div class="user-img"
-                                            style="background-image:url(images/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp)">
+                                        style="background-image: url(./images/team1.jpg);">
                                             <div class="icon d-flex align-items-center justify-content-center"><span
                                                     class="fa fa-quote-left"></div>
                                         </div>
@@ -404,7 +421,7 @@
                                 <div class="text">
                                     <div class="d-flex align-items-center mb-4">
                                         <div class="user-img"
-                                            style="background-image:url(images/xperson_2.jpg.pagespeed.ic.Xrdu_nPZRp.webp)">
+                                        style="background-image: url(./images/team1.jpg);">
                                             <div class="icon d-flex align-items-center justify-content-center"><span
                                                     class="fa fa-quote-left"></div>
                                         </div>
@@ -423,7 +440,7 @@
                                 <div class="text">
                                     <div class="d-flex align-items-center mb-4">
                                         <div class="user-img"
-                                            style="background-image:url(images/xperson_3.jpg.pagespeed.ic.Cln-jaM1jK.webp)">
+                                        style="background-image: url(./images/team1.jpg);">
                                             <div class="icon d-flex align-items-center justify-content-center"><span
                                                     class="fa fa-quote-left"></div>
                                         </div>
@@ -442,26 +459,7 @@
                                 <div class="text">
                                     <div class="d-flex align-items-center mb-4">
                                         <div class="user-img"
-                                            style="background-image:url(images/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp)">
-                                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                                    class="fa fa-quote-left"></div>
-                                        </div>
-                                        <div class="ps-3 tx">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                    <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap">
-                                <div class="text">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <div class="user-img"
-                                            style="background-image:url(images/xperson_2.jpg.pagespeed.ic.Xrdu_nPZRp.webp)">
+                                        style="background-image: url(./images/team1.jpg);">
                                             <div class="icon d-flex align-items-center justify-content-center"><span
                                                     class="fa fa-quote-left"></div>
                                         </div>
@@ -480,7 +478,7 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section bg-light" id="blog">
+    <section class="ftco-section " id="blog">
         <div class="container-xl">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 heading-section text-center" data-aos="fade-up" data-aos-duration="1000">
@@ -582,7 +580,7 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section" id="pricing">
+    <section class="ftco-section pricing" id="pricing">
         <div class="container">
             <div class="row justify-content-center pb-5">
                 <div class="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000">
@@ -755,9 +753,9 @@
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
                         </p>
                         <ul class="ftco-footer-social list-unstyled mt-2">
-                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -783,19 +781,17 @@
                             <ul>
                                 <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain
                                         View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
-                                            210</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text"><span
-                                                class="__cf_email__"
-                                                data-cfemail="afc6c1c9c0efd6c0daddcbc0c2cec6c181ccc0c2">[email&#160;protected]</span></span></a>
-                                </li>
+                               
+                                        <li><a href="callto:">+88019363266788</a></li>
+                                        <li><a href="mailto:">junaiyetmia.jm.bd@gmail.com</a></li>
+                                
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid px-0 py-5 bg-darken">
+        <div class="container-fluid px-0 py-5 ">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -808,19 +804,10 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/glightbox.min.js+aos.js+typewritter.js.pagespeed.jc.krvZqN032w.js"></script>
-    <script src="js/slideNav.js"></script>
-    <!-- <script src="js/js.js"> -->
-    </script>
-    <script src="js/google-map.js+main.js.pagespeed.jc.xh_VzmgBjB.js"></script>
-    <script async src="js/sjs.js"></script>
-    <script async src="js/analytics.js"></script>
-  <script src="js/script.js"></script>
-
+      <script src="js/slick.min.js"></script>
+     <script src="js/script.js"></script>
 </body>
-
 </html>
