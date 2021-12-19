@@ -39,3 +39,4 @@ $('.testimony-slider').slick({
       // instead of a settings object
     ]
   });
+  $('.counter').counterUp();

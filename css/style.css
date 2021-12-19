@@ -95,7 +95,9 @@ p {
     margin-top: 0;
     margin-bottom: 1rem
 }
-
+img{
+    width: 100%;
+}
 address {
     margin-bottom: 1rem;
     font-style: normal;
@@ -1344,11 +1346,15 @@ progress {
     z-index: 0
 
 }
-
+.hero-wrap .hero-position{
+    position: relative;
+}
 
 .hero-wrap img {
-    width: 172%;
-    transform: translateY(47px);
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .hero-wrap.hero-wrap-2 {
@@ -1893,6 +1899,7 @@ progress {
 .services-2 p{
     color:#000;
 }
+.services-2 .text 
 .block-7 {
     width: 100%;
     position: relative;
